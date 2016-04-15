@@ -1,0 +1,319 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Primera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/Javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/popo2.png','imagenes/popo4.png')">
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Volcanes</h1>
+</div>
+<div data-role="main" class="ui-content">
+<!-- Start WOWSlider.com -->
+<iframe src="visor/indexvideo.html" style="width:1000px;height:320px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+</div>
+
+<div>
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Volcán Popocatepetl</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Volcán de Colima</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Monitoreo Volcánico</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Medidas de prevención en caso de caida de ceniza </h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Medidas de prevención en caso de erupcion volcanica</h2>
+</a>
+</li>
+</ul>
+</div>
+  <div data-role="footer" align="center" data-theme="a">
+  <div>
+  <img src="imagenes/persona_azul.png" width="46" height="46">
+  </div>
+  <div>
+  <h4>Aplicacion Tres</h4>
+  <h4>Luis Fernando Rugerio Herrera</h4>
+  </div>
+  </div>
+  </div>
+  
+  <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>Volcán Popocatepetl</h1>
+ </div>
+   <div data-role="content">
+     <p>El Popocatépetl ha estado desde siempre en actividad, a pesar de haber estado en reposo durante buena parte de la segunda mitad del siglo XX. En 1991 se inició un incremento en su actividad y a partir de 1993 las fumarolas eran ya claramente visibles desde distancias de alrededor de 50 kilómetros.</p>
+     <p>Además, existe una gran cantidad de registros desde la antigüedad sobre los periodos de actividad del volcán, e incluso está registrada una erupción en 1927, que fue artificialmente provocada por la dinamitación del cráter para extraer azufre del mismo. La última erupción violenta del volcán se registró del 18 al 19 diciembre de 2000. El 25 de diciembre de 2005 se produjo en el cráter del volcán una nueva explosión, que provocó una columna de humo y cenizas de 3 kilómetros de altura y la expulsión de lava.</p>
+     <div data-role="content" align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','imagenes/popo2.png',1)"><img src="imagenes/popo1.png" width="686" height="439" id="Image4"></a>
+
+     </div>
+     <p>En vista de que la lava puede salir por cualquier fisura que se produzca en sus laderas y no sólo por su cráter, es difícil conocer por adelantado cuáles serían las zonas afectadas en caso de erupción. Lo más que se puede decir es que si la lava saliera del lado norte o noreste, o este y sureste, el estado de Puebla se vería afectado. Si saliera del lado sur se vería afectado el estado de México y posiblemente el estado de Morelos, y si saliera del lado oeste y suroeste se vería afectada la región en donde se encuentra la población de Amecameca. El área de la superficie afectada dependerá de la viscosidad de la lava. Como última posibilidad teórica, si se llenara el cráter con lava (hecho poco probable), ésta se desparramaría por el lado noreste, dirección en que se encuentra el borde más bajo del mismo.</p>
+     <p>Las zonas que serían afectadas por las cenizas y los gases del Popocatépetl dependerían de la dirección de los vientos, principalmente a la altura del cráter. A grandes rasgos, se puede decir que si las emisiones ocurrieran de noviembre a abril, el valle de Puebla sería el afectado. Si la erupción ocurriera de junio a septiembre, la región sur del estado de México y el estado de Morelos serían las regiones de mayor riesgo, aunque también podría sufrir daño el extremo sur del Distrito Federal (México).</p>
+<div data-role="content" align="center">
+<img src="imagenes/popo3.png" width="322" height="386">
+</div>
+     <p>Por otra parte, el volumen de hielo que contienen los glaciares del Popocatépetl es mayor de 17 millones de metros cúbicos. Estos glaciares se encuentran en la cara noroeste-norte y si se derritieran súbitamente, la corriente de agua probablemente se canalizaría por la barranca central y la barranca del Ventorrillo. En esta situación, Santiago Xalitzintla, San Nicolás de los Ranchos y San Pedro Benito Juárez podrían ser algunos de los poblados más afectados. En temporada de lluvias es de esperar que el flujo de lodo afecte una mayor superficie debido a que el suelo tiene menor capacidad para absorber o infiltrar agua por encontrarse saturado por las aguas. </p>
+   </div>
+  <div data-role="content" align="center">
+  <div>
+  <div data-role="collapsible" data-content-theme="false">
+<h1>Localización</h1>
+<div>
+  <p>El Popocatépetl es un volcán activo localizado en el centro de México, en los límites territoriales de los estados de Morelos, Puebla y México. Se localiza a unos 72 km al sureste de la Ciudad de México, 43 km de Puebla, 63 km de Cuernavaca, y 53 km de Tlaxcala. 
+</p>
+<div data-role="content" align="center">
+<img src="imagenes/localizacion popo.png"> 
+</div>
+  <p>Tiene una forma cónica simétrica y está unido por la parte norte con el Iztaccíhuatl mediante un paso montañoso conocido como Paso de Cortés. El volcán tiene glaciares perennes cerca de la boca del cono, en la punta de la montaña. Es el segundo volcán más alto de México, con una altitud máxima de 5500 metros sobre el nivel del mar.</p>
+  <p>
+    <div data-role="content" align="center">
+  <div>
+  <div data-role="collapsible" data-content-theme="false">
+<h1>Dimensiones</h1>
+<div>
+  <p>El Popocatépetl es un estratovolcán, y los estudios paleomagnéticos que se han hecho de él indican que tiene una edad aproximada de 730 000 años. Su altura es de 5500 msnm, es de forma cónica, tiene un diámetro de 25 km en su base y la cima es el corte elíptico de un cono y tiene una orientación noreste-suroeste. La distancia entre las paredes de su cráter varía entre los 660 y los 840 m. </p>
+  <div data-role="content" align="center">
+<img src="imagenes/dimencion popo.png"> 
+</div> 
+</div>
+</div>
+  </div>
+  </div>
+</div>
+</div>
+  </div>
+  </div>
+  <div data-role="footer" data-theme="a">
+  <h4>Aplicacion Tres, Volcan Popocatepetl, FRH</h4>
+  </div>
+  </div>
+  </div>
+ 
+  <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>Volcán de Colima</h1>
+ </div>
+ <div data-role="content">
+ <div>
+ <p> A lo largo de 500 años, el volcán ha tenido más de 40 explosiones desde 1576, de entre las cuales destacan las de 1585, 1606, 1622, 1690, 1818, 1890, 1903, 1913 (el 13 de enero de ese año se cerró el cuarto ciclo de actividad) y 1999. El 6 de junio del 2005, a las 11.00 (hora local), se produjo una columna eruptiva que alcanzó 4 km sobre el volcán, arrojó cenizas de roca y piroclastos, y desde principios de enero del 2013 se ha clasificado en actividad creciente (se produjo una explosión estruendosa el día 29). Su ciclo eruptivo es de aproximadamente 100 años; en 2015 comenzó a presentar un aumento en su actividad que está en constante vigilancia.</p>
+ <p>Adicionalmente, se debe tener en cuenta la actividad de menor grado, todo lo cual demuestra que a lo largo de los últimos siglos este volcán ha incrementado su proceso eruptivo, y se siguen estudiando los riesgos de una nueva erupción. En los estados de Colima y Jalisco, varias poblaciones son vulnerables ante una posible erupción. El depósito de flujos piroclásticos, lluvia de pómez y cenizas y de flujos de lodo o lahares podrían afectar en primera instancia a las poblaciones de La Yerbabuena, La Becerrera, Barranca del Agua, Rancho El Jabalí, Suchitlán, San Antonio y Rancho la Joya, en el estado de Colima, además de Juan Barragán, Agostadero, Los Machos, El Borobollón, Durazno, San Marcos, Tonila, Cofradía de Tonila, Causentla, El Fresnal, Atenguillo, Saucillo, El Embudo y El Chayán, en el estado de Jalisco, y en segundo término a otras poblaciones de ambos estados un poco más alejadas, como Quesería, Ciudad Guzmán, Tuxpan, la ciudad de Colima, Villa de Álvarez, Comala y Cuauhtémoc, entre otras. </p>
+ <div data-role="content" align="center">
+<img src="imagenes/colima2.png" width="496" height="329"></div>
+ <p>El 7 de enero del 2013 se produjo una explosión que generó una columna de ceniza volcánica que se elevó a más de 3 km de altura.</p>
+<p>El 21 de noviembre de 2012 se registró una gran explosión que generó una columna de ceniza volcánica que se elevó más de 3 km de altura. Asimismo, produjo una avalancha de flujo piroclástico que no causó daños a la población aledaña. Cabe recordar que fue este suceso lo que destruyó ciudades como Pompeya y Herculano cuando el monte Vesubio arrojó, en la Antigüedad, gran cantidad de flujo piroclástico, 5 veces más caliente que el agua hirviendo, lo que destruyó los tejidos blandos de las personas que no lograron escapar.</p>
+<p>Una de las erupciones que tuvo repercusiones en la actividad diaria de las personas fue sin duda la registrada el 3 de enero del 2015 a las 10:00 aproximadamente (hora de la Ciudad de México), la cual tuvo una explosión que alcanzó 3 km, y la ceniza arrojada se expandió a Mazamitla, Zapotiltic, Ciudad Guzmán, Tonila, Tamazula de Gordiano y Valle de Juárez, todas ellas localizadas en el estado de Jalisco.</p>
+<p>El 16 de enero del 2015 se produjo una columna eruptiva, que arrojó cenizas de roca y flujos piroclásticos. El 21 de enero del 2015 (fecha en que se conmemora el aniversario de un terremoto en el propio territorio colimense) se produjo una columna eruptiva que se alzó 4 km. El viernes 10 de julio del 2015 se presentó una erupción mayor, que obligó a evacuar poblaciones en las zonas contiguas al volcán.</p>
+<div data-role="content" align="center">
+  <div>
+  <div data-role="collapsible" data-content-theme="false">
+<h1>Localización</h1>
+<div>
+  <p>El volcán de colima es un estratovolcán ubicado en los límites de los estados de Colima y Jalisco, en México. El volcán de Colima o volcán de Fuego se eleva entre 3870 y 3940 msnm, y su altura se encuentra en un constante cambio gracias a la constante actividad que ha presentado durante los últimos años; por eso resulta difícil decir con exactitud cuál es en estos momentos.</p>
+<div data-role="content" align="center">
+<img src="imagenes/licalizacion colima.png"></div>
+<div data-role="content" align="center">
+  <div>
+  <div data-role="collapsible" data-content-theme="false">
+<h1>Dimensiones</h1>
+<div>
+  <p>El volcán de Fuego de Colima, (3860 m. sobre el nivel del mar) es un estratovolcán andesítico que forma parte, junto con el Nevado de Colima (4330 msnm.), de un complejo volcánico situado en el Cinturón Neovolcánico Mexicano y cuyas coordenadas geográficas (19º30'44''N y 103º37'02''W) lo sitúan entre los Estados de Colima (municipios de Comala y Cuauhtémoc) y Jalisco (municipios de Tuxpan, Zapotitlán y Tonila.</p>
+  <div data-role="content" align="center">
+<img src="imagenes/colima4.png" width="555" height="369"> 
+</div> 
+</div>
+</div>
+  </div>
+  </div>
+</div>
+</div>
+  </div>
+  </div>
+
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a">
+ <h4>Aplicacion Tres, Volcan Popocatepetl, FRH</h4>
+ </div>
+ </div>
+ </div>
+
+ <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Monitoreo Volcánoco</h1>
+ </div>
+ <div data-role="content">
+ <div>
+ <ul>
+ <p>El Centro Nacional de Prevención de Desastres se creó tras el sismo del 19 de septiembre de 1985 que sorprendió a la Ciudad de México a las 7:19 con una magnitud de 8,1 en escala Richter. México con el apoyo del gobierno de Japón y de la Universidad Nacional Autónoma de México, estableció un Sistema Nacional de Protección Civil y creó el 20 de septiembre del 1988 “una institución dedicada a generar conocimientos especializados para comprender las manifestaciones de fenómenos tanto naturales como antropogénicos, desarrollar técnicas para reducir riesgos y conocer las causas que los generan”, El Centro Nacional de Prevención de Desastres (CENAPRED ). </p>
+ <div data-role="content" align="center"><a href="http://www.cenapred.unam.mx:8080/monitoreoPopocatepetl/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','imagenes/popo4.png',1)"><img src="imagenes/colima1.png" width="236" height="468" id="Image9"></a>
+   
+ </div>
+ </ul>
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a">
+ <h4>Aplicacion Tres, Volcan Popocatepetl, FRH</h4>
+ </div>
+ </div>
+ </div>
+
+ <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Medidas de prevención en caso de caida de ceniza </h1>
+ </div>
+ <div data-role="content">
+ <div>
+ <ul>
+ <h3>RECOMENDACIONES EN CASO DE CAÍDA DE CENIZA VOLCÁNICA</h3>
+   <li>No humedecer la ceniza a fin de evitar taponamientos en el sistema de  alcantarillado</li>
+   <li>Mantén la calma.</li>
+   <li>Utiliza medios electrónicos y de comunicación para obtener información  confiable que den las autoridades de Protección Civil sobre la caída de ceniza  y atiende siempre sus instrucciones.</li>
+   <li>No realices actividades al aire libre y si es posible no salgas.</li>
+   <li>Cierra puertas y ventanas y coloca toallas o trapos húmedos en las  rendijas.</li>
+   <li>Si tienes que salir cúbrete con un pañuelo o tapabocas, limpia ojos y garganta  con agua pura.</li>
+   <li>Para los ojos, usa lentes protectores, especialmente si usas lentes de  contacto.</li>
+   <li>Ten a la mano una linterna y pilas.</li>
+   <li>La ceniza volcánica puede ser resbaladiza, sobre todo cuando está  mojada. Toma las precauciones necesarias.</li>
+   <li>Cubre tinacos, cisternas y depósitos de agua.</li>
+   <li>Barre y retira la ceniza de techos, azoteas, patios y calles,  deposítalas en bolsas y no permitas que se vaya al drenaje.</li>
+   <li>Si es posible no conduzcas, si tienes que hacerlo, hazlo a baja  velocidad y con las luces encendidas, ya que la ceniza dificulta la visibilidad  y provoca que el pavimento se vuelva resbaloso.</li>
+   <li>Ante la caída de ceniza volcánica evita consumir alimentos en la vía  pública.</li>
+   <li>Si permaneces expuesto por algún tiempo a las cenizas volcánicas, al  ingresar a tu casa se recomienda cambiar de ropa.</li>
+   <li>Durante la caída de ceniza volcánica, evita que los menores realicen  actividades al aire libre.</li>
+   <li>Mantén a tus mascotas en un lugar techado al igual que sus alimentos. Si  tus macotas salen, cepíllalos antes de permitirles la entrada nuevamente.</li>
+   <li>La ceniza puede ser usada para parques, jardines, macetas o tierras de  cultivo, ya que es rica en minerales.</li>
+   <li>No repitas ni difundas rumores. La ciudad de Puebla se encuentra a una  distancia segura, no intentes salir.</li>
+   <li>Usa las vías de comunicación solo en caso de ser necesario.</li>
+ </ul>
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a">
+ <h4>Aplicacion Tres, Volcan Popocatepetl, FRH</h4>
+ </div>
+ </div>
+ </div>
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Medidas de prevención en caso de erupcion volcanica</h1>
+ </div>
+ <div data-role="content">
+ <div>
+ <h2>Antes de una erupción volcánica</h2>
+<p>Lo primero que  necesitamos, sea cual sea el desastre, es un<strong> kit  de emergencia</strong>. Es posible que tengamos que sobrevivir sin ayuda después del fenómeno,  lo cual significa que necesitaremos comida, agua y otros suministros en  cantidad suficiente para resistir al menos tres días. Los cuerpos de emergencia  acudirán a ayudarle, pero no pueden alcanzar a todo el mundo al mismo tiempo.  Un kit de emergencia es una colección de artículos básicos que pueden ser  necesarios en caso de desastre. Como no sabemos dónde vamos a estar cuando  ocurra una emergencia, necesitamos preparar<strong>kits  para casa, trabajo y vehículos.</strong> <br>
+  <br>
+  <br>
+El kit de emergencia de casa debería incluir comida,  agua y suministros para al menos tres días. Hay que tenerlo preparado por si  debemos salir de casa rápidamente y asegurarnos de que todos los miembros de la  familia saben dónde está. El kit del trabajo con agua y comida debería estar  siempre listo para cogerlo e irnos en caso de evacuación. Es conveniente llevar  un kit de emergencias (con comida, agua, botiquín de primeros auxilios, etc.)  también en el coche por si nos quedamos atrapados.<br>
+  <strong>El  kit básico debe contener:</strong></p>
+ <ul>
+   <li>Comida no perecedera en cantidad  suficiente para tres días</li>
+   <li>Agua en cantidad suficiente para tres  días</li>
+   <li>Radio o televisión portátil a pilas y  pilas de repuesto</li>
+   <li>Linterna</li>
+   <li>Botiquín de primeros auxilios</li>
+   <li>Artículos de higiene (toallitas  húmedas y papel higiénico)</li>
+   <li>Cerillas y recipiente impermeable</li>
+   <li>Silbato</li>
+   <li>Ropas de repuesto</li>
+   <li>Accesorios de cocina y utensilios  para cocinar, incluyendo un abrelatas</li>
+   <li>Fotocopias del carnet de identidad y  las tarjetas de crédito</li>
+   <li>Dinero en efectivo</li>
+   <li>Artículos que respondan a necesidades  especiales como recetas médicas, gafas, lentillas, etc.</li>
+   <li>Suministros para niños, como pañales.</li>
+   <li>En caso de vivir en una zona muy  fría, debemos tener en cuenta que quizá no encontremos calor, así que debemos  incluir una muda completa de ropa y zapatos por persona, incluyendo abrigos,  bufandas, guantes, etc.</li>
+   <li>Un par de gafas y mascarillas  desechables para cada miembro de la familia</li>
+ </ul>
+ <p>Lo mejor es que nos mantengamos alejados de las zonas  volcánicas, pero si vivimos cerca de un volcán, activo o no, debemos estar  preparados para la evacuación en el momento que nos avisen de ello.</p>
+ <h2>Durante una erupción volcánica</h2>
+  <p>Si un volcán entra en erupción en su zona:</p>
+ <ul>
+   <li>Proceda inmediatamente a la  evacuación para evitar los escombros volantes, gases calientes, explosiones  laterales y corrientes de lava.</li>
+   <li>Tenga cuidado con los flujos de lodo.</li>
+   <li>El daño que estos flujos pueden provocar  aumenta&nbsp;con las lluvias persistentes y se  mueven con más rápido de lo que nosotros podemos andar o correr. Mire corriente  arriba cuando vaya a cruzar un puente y nunca lo cruce si se aproxima un flujo  de lodo.</li>
+   <li>Use ropa que le cubra todo el cuerpo  para proteger la piel</li>
+   <li>Use gafas y mascarilla o un paño  húmedo para facilitar la respiración</li>
+ </ul>
+ <p><em>Si  se queda atrapado dentro de su hogar:</em></p>
+ <ul>
+   <li>Cierre ventanas, puertas y toda  abertura al exterior</li>
+   <li>Asegúrese de que los animales se  encuentran bajo un refugio cubierto</li>
+ </ul>
+ <p><em>Si  se queda atrapado en el exterior:</em></p>
+ <ul>
+   <li>Busque refugio bajo techo</li>
+   <li>Evite áreas bajas donde los flujos de  lodo pueden ser más peligrosos</li>
+ </ul>
+ <h2>Después de una erupción volcánica</h2>
+ <ul>
+   <li>Manténgase alejado de la ceniza  volcánica</li>
+   <li>No conduzca a través de ella, daña  los vehículos</li>
+   <li>Si tuvo que evacuar su hogar y al  volver encuentra ladrones saqueándolo, no se enfrente a ellos. Pida ayuda.</li>
+   <li>Hierva el agua que vaya a beber.</li>
+   <li>Encienda la radio o televisión de su  kit de emergencias para obtener noticias y posibles instrucciones</li>
+   <li>Si padece alguna dolencia  respiratoria, no salga de su hogar hasta que se confirme que no hay riesgo.</li>
+   <li>Limpie la ceniza de los techos,  puesto que pesa y puede provocar derrumbes</li>
+   <li>Revise con precaución si funcionan  luz, agua, gas y teléfono</li>
+   <li>Ayude a las personas heridas o que  han quedado atrapadas. Pida ayuda a los servicios de emergencia. </li>
+ </ul>
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a">
+ <h4>Aplicacion Tres, Volcan Popocatepetl, FRH</h4>
+ </div>
+ </div>
+ </div>
+
+</body>
+</html>
